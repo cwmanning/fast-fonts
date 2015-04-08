@@ -27,7 +27,9 @@ Promise.all(fontObservers)
   .then(function() {
     window.fastFontsEnd = Date.now();
     window.fastFontsTotal = fastFontsEnd - fastFontsBegin;
-    console.log('Fonts loaded: ' + fastFontsTotal + ' ms');
+    var metrics = document.getElementById('metrics');
+    metrics.setAttribute('data-font-render-total', fastFontsTotal);
+    console.log('Font render: ' + fastFontsTotal + ' ms');
     <?php
       if (!isset($_COOKIE["font-roboto"])) {
     ?>

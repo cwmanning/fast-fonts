@@ -1,3 +1,5 @@
+<div id="metrics"></div>
+
 <div class="header-container">
   <header class="wrapper clearfix">
     <h1 class="title">h1.title</h1>
