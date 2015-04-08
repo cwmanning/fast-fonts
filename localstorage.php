@@ -12,7 +12,7 @@
       }
     </style>
     <?php include "includes/fontfaceobserver.php"; ?>
-    <?php include "includes/localFont.php"; ?>
+    <?php include "includes/localfont.php"; ?>
   </head>
   <body>
     <?php include "includes/markup.php"; ?>
