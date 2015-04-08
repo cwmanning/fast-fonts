@@ -25,9 +25,9 @@ var fontObservers = [
 
 Promise.all(fontObservers)
   .then(function() {
-    var fastFontsEnd = Date.now();
-    var timeToLoad = fastFontsEnd - fastFontsBegin;
-    console.log('Fonts loaded: ' + timeToLoad + ' ms');
+    window.fastFontsEnd = Date.now();
+    window.fastFontsTotal = fastFontsEnd - fastFontsBegin;
+    console.log('Fonts loaded: ' + fastFontsTotal + ' ms');
     <?php
       if (!isset($_COOKIE["font-roboto"])) {
     ?>

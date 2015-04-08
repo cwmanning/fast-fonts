@@ -3,5 +3,5 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
 <script>
-  var fastFontsBegin = Date.now();
+  window.fastFontsBegin = Date.now();
 </script>
