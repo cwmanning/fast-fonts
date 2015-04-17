@@ -30,6 +30,11 @@ Promise.all(fontObservers)
     var metrics = document.getElementById('metrics');
     metrics.setAttribute('data-font-render-total', fastFontsTotal);
     console.log('Font render: ' + fastFontsTotal + ' ms');
+    if (window.location.search.indexOf('alert') !== -1) {
+      setTimeout(function() {
+        alert('Font render: ' + fastFontsTotal + ' ms');
+      }, 200);
+    }
     <?php
       if (!isset($_COOKIE["font-roboto"])) {
     ?>
